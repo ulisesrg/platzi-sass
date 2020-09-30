@@ -1,0 +1,19 @@
+{
+  "name": "platzi-sass",
+  "version": "1.0.0",
+  "description": "Project based on Platzi's Sass Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch scss:css"
+  },
+  "author": "Ulises Rojas González",
+  "license": "MIT",
+  "keywords": [
+    "sass",
+    "css"
+  ],
+  "devDependencies": {
+    "sass": "^1.26.11"
+  }
+}
