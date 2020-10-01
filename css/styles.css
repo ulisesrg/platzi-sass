@@ -1,22 +1,137 @@
+@charset "UTF-8";
 /* Mixins */
 table tr:hover {
   background-color: #dbd879;
 }
 
 /* Buttons */
-.btn {
+.btn--secondary, .btn--primary, .btn--success, .btn--error, .btn--info, .btn, .btn--disabled {
   display: inline-block;
+  line-height: 2.2;
   color: #fff;
-  background-color: #ea83ee;
-  line-height: 2.5;
+  text-align: center;
+  vertical-align: middle;
+  font-size: fs(normal);
+  text-transform: uppercase;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 1em;
+  padding-left: 1em;
   border-radius: 3px;
-  font-size: 24px;
+  text-decoration: none;
+  /**
+  * Nadie quiere un botón con texto subrayado cuando
+  * hacemos hover.
+  */
 }
-.btn__icon {
-  font-size: 0.6em;
+.btn--secondary:hover, .btn--primary:hover, .btn--success:hover, .btn--error:hover, .btn--info:hover, .btn:hover, .btn--disabled:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.btn--secondary:active, .btn--primary:active, .btn--success:active, .btn--error:active, .btn--info:active, .btn:active, .btn--disabled:active, .btn--secondary:focus, .btn--primary:focus, .btn--success:focus, .btn--error:focus, .btn--info:focus, .btn:focus, .btn--disabled:focus {
+  outline: none;
+}
+.btn--secondary:visited, .btn--primary:visited, .btn--success:visited, .btn--error:visited, .btn--info:visited, .btn:visited, .btn--disabled:visited {
+  color: #fff;
+  text-decoration: none;
 }
 .btn--info {
   background-color: #42b8dd;
+}
+
+/**
+* Botón de Info
+*/
+.btn--info {
+  color: #42b8dd;
+}
+.btn--info:hover {
+  color: #42b8dd;
+}
+.btn--info:visited {
+  color: #42b8dd;
+}
+
+/**
+* Botón de Error
+*/
+.btn--error {
+  color: #da4f48;
+}
+.btn--error:hover {
+  color: #da4f48;
+}
+.btn--error:visited {
+  color: #da4f48;
+}
+
+/**
+* Botón de OK
+*/
+.btn--success {
+  color: #5bb75b;
+}
+.btn--success:hover {
+  color: #5bb75b;
+}
+.btn--success:visited {
+  color: #5bb75b;
+}
+
+/**
+* Botón principal
+*/
+.btn--primary {
+  background-color: #ea83ee;
+}
+
+.btn--secondary {
+  background-color: #dbd879;
+}
+
+/*------------------------------------*\
+    $BOTONES-TAMAÑOS
+\*------------------------------------*/
+/**
+ * Variantes de los botones por tamaño.
+ *
+ */
+.btn--mini {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.btn--small {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  line-height: 2;
+  font-size: 14px;
+}
+
+.btn--big {
+  padding-right: 3em;
+  padding-left: 3em;
+  line-height: 3;
+  font-size: 18px;
+}
+
+.btn--block {
+  display: block;
+}
+
+/**
+* Botón no disponible
+*/
+.btn--disabled {
+  opacity: 5;
+  cursor: not-allowed;
+  background-color: #bfbfbf;
 }
 
 /* Links */
