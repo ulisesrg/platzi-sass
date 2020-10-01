@@ -1,1 +1,19 @@
 /* Buttons */
+
+.btn {
+  display: inline-block;
+  color: $button-color;
+  background-color: $button-background-color;
+  line-height: 2.5;
+  border-radius: $border-radius;
+  font-size: $button-font-size;
+
+  &__icon {
+    font-size: 0.6em;
+  }
+  
+  &--info {
+    background-color: $color-info;
+  }
+}
+

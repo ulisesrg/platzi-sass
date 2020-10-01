@@ -20,5 +20,9 @@ $color-success: rgb(91, 183, 91);
 $basefont: 'Quicksand', sans-serif;
 $basefontsize: 16px;
 
-$buttoncolor: $color-white;
-$buttonbackgroundcolor: $color-brand;
+$button-color: $color-white;
+$button-background-color: $color-brand;
+$button-font-size: $basefontsize * 1.5;
+
+// Constants
+$border-radius: 3px;
