@@ -1,0 +1,7 @@
+@function sum($number-one, $number-two) {
+  @return $number-one + $number-two;
+}
+
+.sum-example {
+  padding: sum(10px, 5px);
+}
