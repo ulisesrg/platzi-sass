@@ -1,0 +1,11 @@
+p {
+  color: black;
+}
+
+$background-color: black;
+
+@if $background-color == black {
+  p {
+    color: white;
+  }
+}
