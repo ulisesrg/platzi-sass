@@ -5,14 +5,15 @@ $color-brand: #ea83ee;
 $color-secondary: #dbd879;
 
 $color-black: #000;
-$color-darkgrey: #4d4d4d;
 $color-grey: #737373;
-$color-lightgrey: #bfbfbf;
+$color-darkgrey: darken($color-grey, 25%);
+$color-lightgrey: lighten($color-grey, 25%);
 $color-white: #fff;
 
 // Textures
 $color-alert: rgb(252, 228, 207);
 $color-error: rgb(218, 79, 72);
+$color-invert: invert($color-error);
 $color-info: rgb(66, 184, 221);
 $color-success: rgb(91, 183, 91);
 
