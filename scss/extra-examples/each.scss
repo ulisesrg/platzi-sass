@@ -1,0 +1,5 @@
+$font-weights: normal bold italic;
+
+@each $font in ($font-weights) {
+  .#{$font} {font-weight: $font;}
+}
